@@ -1,0 +1,49 @@
+
+version: 2
+
+models:
+  - name: cards
+    description: >
+      Staging model for credit cards data from the raw DuckDB source. Cleans up column names, 
+      standardizes card types, removes leading zeros from CVV, casts financial values to integers,
+      and transforms the Card Type value 'Debit (Prepaid)' to 'Prepaid'.
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user (integer)."
+        data_type: integer
+        tests:
+          - not_null
+      - name: card_index
+        description: "Index of the card assigned to the user (integer)."
+        data_type: integer
+      - name: card_brand
+        description: "The brand of the credit card (e.g., Visa, Mastercard, Discover)."
+      - name: card_type
+        description: "The type of the card (e.g., Debit, Credit, Prepaid)."
+        tests:
+          - accepted_values:
+              values: ['Debit', 'Credit', 'Prepaid']
+      - name: card_number
+        description: "The 16-digit card number."
+        tests:
+          - not_null
+          - unique
+      - name: expires
+        description: "The expiration date of the card (Format: MM/YYYY)."
+      - name: cvv
+        description: "The Card Verification Value (leading zeros removed)."
+      - name: has_chip
+        description: "Indicates whether the card has an EMV chip (YES/NO)."
+      - name: cards_issued
+        description: "The number of physical cards issued for this account (integer)."
+        data_type: integer
+      - name: credit_limit
+        description: "The credit limit of the card in dollars, converted to integer ($ symbol removed)."
+        data_type: integer
+      - name: acct_open_date
+        description: "The date the account was originally opened (Format: MM/YYYY)."
+      - name: year_pin_last_changed
+        description: "The four-digit year the PIN was last changed (integer)."
+        data_type: integer
+      - name: card_on_dark_web
+        description: "Indicates if the card information was found on the dark web (Yes/No)."

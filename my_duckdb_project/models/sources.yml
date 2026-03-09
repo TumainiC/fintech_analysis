@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw data ingested into our local DuckDB database"
+    schema: main  # This tells dbt to look in DuckDB's default schema
+    tables:
+      - name: cards
+        description: "Credit card data"
+      - name: transactions
+        description: "Transaction data"
+      - name: customers
+        description: "Customer data"
