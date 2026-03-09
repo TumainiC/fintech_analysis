@@ -1,0 +1,5 @@
+kagglehub
+duckdb
+logger
+dbt-duckdb
+dbt-core

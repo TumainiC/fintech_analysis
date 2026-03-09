@@ -1,0 +1,56 @@
+[0m11:15:42.993824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000288D18E9FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000288CF56C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000288D23C3750>]}
+
+
+============================== 11:15:43.005618 | f932d097-82bc-436b-ad27-5634909972e1 ==============================
+[0m11:15:43.005618 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:15:43.006873 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_colors': 'True', 'write_json': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'invocation_command': 'dbt init my_duckdb_project', 'printer_width': '80', 'target_path': 'None'}
+[0m11:15:43.051473 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Admin\.dbt
+[0m11:15:43.054702 [debug] [MainThread]: Starter project path: C:\Users\Admin\miniconda3\Lib\site-packages\dbt\include\starter_project
+[0m11:15:43.117654 [info ] [MainThread]: 
+Your new dbt project "my_duckdb_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:15:43.118933 [info ] [MainThread]: Setting up your profile.
+[0m11:15:43.121219 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m11:15:43.122757 [debug] [MainThread]: Command `dbt init` failed at 11:15:43.122542 after 0.53 seconds
+[0m11:15:43.123329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000288D2B690F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000288D2B8CCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000288D29CD260>]}
+[0m11:15:43.123867 [debug] [MainThread]: Flushing usage events
+[0m11:15:46.556311 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:16:19.480610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206C8BC9FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206C684C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206C96A3750>]}
+
+
+============================== 11:16:19.487513 | 9f7ff236-f248-43b7-b10e-2cb36ce72d9f ==============================
+[0m11:16:19.487513 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:16:19.489093 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt init my_duckdb_project', 'write_json': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'printer_width': '80', 'target_path': 'None'}
+[0m11:16:19.524468 [info ] [MainThread]: A project called my_duckdb_project already exists here.
+[0m11:16:19.526758 [debug] [MainThread]: Command `dbt init` succeeded at 11:16:19.526542 after 0.25 seconds
+[0m11:16:19.527291 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206CAE18180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206CAE3CA70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206C9CAC9E0>]}
+[0m11:16:19.528063 [debug] [MainThread]: Flushing usage events
+[0m11:16:22.312774 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:26:06.892164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021791579FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002178F1EC410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021792043750>]}
+
+
+============================== 11:26:06.898671 | 6401923d-b550-415c-93b2-7abef06bc38f ==============================
+[0m11:26:06.898671 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:26:06.899837 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'no_print': 'None', 'invocation_command': 'dbt debug --config-dir', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'write_json': 'True'}
+[0m11:26:06.969791 [info ] [MainThread]: To view your profiles.yml file, run:
+
+start C:\Users\Admin\.dbt
+[0m11:26:06.971254 [debug] [MainThread]: Command `dbt debug` succeeded at 11:26:06.971064 after 0.45 seconds
+[0m11:26:06.971752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217927E42B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021792768710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002179264CE20>]}
+[0m11:26:06.972283 [debug] [MainThread]: Flushing usage events
+[0m11:26:09.992665 [debug] [MainThread]: An error was encountered while trying to flush usage events
