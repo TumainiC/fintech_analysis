@@ -1,7 +1,11 @@
 # Create conda environment and load the rrequirements
 echo "Setting up the uv environment and installing dependencies..."
-uv init fintech-analysis
-uv add -r requirements.txt
+uv venv fintech-env
+source fintech-env/bin/activate
+uv python install 3.12
+uv pip install -r requirements.txt
+echo "Verifying the installation of dependencies..."
+uv pip list
 echo "Environment setup and dependencies installation completed successfully."
 
 
