@@ -47,6 +47,9 @@ if __name__ == "__main__":
     # Delete if db exists    
     if os.path.exists('./data/db/fintech.db'):
         os.remove('./data/db/fintech.db')
+    
+    # Create db folder
+    os.makedirs('./data/db', exist_ok=True)
 
     con = duckdb.connect('./data/db/fintech.db')  # file database
     logging.info("Connected to DuckDB database 'fintech.db'.")
